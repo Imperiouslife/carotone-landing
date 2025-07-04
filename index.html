@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 Carotone Crema Aclarante - Transforma Tu Piel COMPLETA en 7 días</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #ff6b9d 0%, #ffa726 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header urgente */
+        .urgency-bar {
+            background: linear-gradient(45deg, #e91e63, #ff4081);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+            box-shadow: 0 2px 10px rgba(233, 30, 99, 0.3);
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255, 107, 157, 0.9), rgba(255, 167, 38, 0.9)), 
+                        radial-gradient(circle at center, #ffc1cc 0%, #ffb3ba 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            animation: fadeInUp 1s ease-out;
+            line-height: 1.2;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        }
+
+        .product-image {
+            max-width: 380px;
+            margin: 30px auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            background: white;
+            padding: 20px;
+        }
+
+        .product-image:hover {
+            transform: scale(1.02);
+        }
+
+        .product-image img {
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background: linear-gradient(135deg, #ffffff, #f8f0ff);
+            margin: 20px 0;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(255, 107, 157, 0.15);
+            text-align: center;
+            position: relative;
+            border: 3px solid #ff6b9d;
+        }
+
+        .price-original {
+            font-size: 2rem;
+            color: #999;
+            text-decoration: line-through;
+            margin-bottom: 10px;
+        }
+
+        .price-current {
+            font-size: 4rem;
+            background: linear-gradient(45deg, #e91e63, #ff4081);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: none;
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: linear-gradient(45deg, #e91e63, #ff4081);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transform: rotate(15deg);
+            box-shadow: 0 8px 20px rgba(233, 30, 99, 0.4);
+        }
+
+        .payment-options {
+            margin: 20px 0;
+            font-size: 1.1rem;
+            color: #666;
+            background: #f8f0ff;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #ff6b9d;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background: linear-gradient(45deg, #25d366, #20bf55);
+            color: white;
+            padding: 22px 45px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.6);
+        }
+
+        .cta-button:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            transition: all 0.6s ease;
+            transform: translate(-50%, -50%);
+        }
+
+        .cta-button:hover:before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Sección de áreas del cuerpo */
+        .body-areas {
+            background: linear-gradient(135deg, #ff6b9d, #ffa726);
+            color: white;
+            padding: 60px 0;
+            margin: 30px 0;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        .body-areas h2 {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .area-item {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .area-item:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-5px);
+        }
+
+        .area-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .area-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Urgency Timer */
+        .urgency-timer {
+            background: linear-gradient(45deg, #e91e63, #ff4081);
+            color: white;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.4);
+        }
+
+        .timer {
+            font-size: 2.5rem;
+            margin: 15px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Social Proof */
+        .social-proof {
+            background: linear-gradient(135deg, #f8f0ff, #fff0f5);
+            padding: 50px 40px;
+            border-radius: 25px;
+            margin: 30px 0;
+            border: 2px solid #ff6b9d;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(255, 107, 157, 0.15);
+            border: 2px solid #ff6b9d;
+            position: relative;
+        }
+
+        .testimonial:before {
+            content: '"';
+            font-size: 4rem;
+            color: #ff6b9d;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-family: serif;
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #e91e63;
+            font-size: 1.1rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: linear-gradient(135deg, #ffffff, #f8f0ff);
+            padding: 60px 50px;
+            border-radius: 25px;
+            margin: 30px 0;
+            border: 2px solid #ff6b9d;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            background: linear-gradient(45deg, #e91e63, #ff4081);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 2px solid #ff6b9d;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(255, 107, 157, 0.1);
+        }
+
+        .faq-question {
+            background: linear-gradient(135deg, #ff6b9d, #ffa726);
+            color: white;
+            padding: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .faq-answer {
+            padding: 25px;
+            background: white;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #e91e63, #ff4081);
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+            border-radius: 25px;
+            margin: 30px 0;
+            box-shadow: 0 20px 50px rgba(233, 30, 99, 0.3);
+        }
+
+        .final-cta h2 {
+            font-size: 3.2rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* WhatsApp Icon Styling */
+        .whatsapp-icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 12px;
+            vertical-align: middle;
+            display: inline-block;
+            object-fit: contain;
+        }
+
+        .whatsapp-icon-small {
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+            vertical-align: middle;
+            display: inline-block;
+            object-fit: contain;
+        }
+
+        .whatsapp-icon-large {
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+            vertical-align: middle;
+            display: inline-block;
+            object-fit: contain;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: linear-gradient(45deg, #25d366, #20bf55);
+            color: white;
+            border-radius: 50px;
+            padding: 18px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+            z-index: 1000;
+            animation: bounce 2s infinite;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.7);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .urgency-bar {
+                font-size: 0.9rem;
+                padding: 12px 10px;
+                line-height: 1.3;
+            }
+            
+            .hero {
+                padding: 40px 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.9rem;
+                line-height: 1.2;
+                margin-bottom: 15px;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+                line-height: 1.4;
+            }
+            
+            .hook-text {
+                padding: 25px !important;
+                font-size: 1rem !important;
+                margin: 20px 0 !important;
+            }
+            
+            .hook-text h3 {
+                font-size: 1.3rem !important;
+                margin-bottom: 15px !important;
+            }
+            
+            .product-image {
+                max-width: 300px;
+                margin: 25px auto;
+                padding: 15px;
+            }
+            
+            .pricing {
+                padding: 30px 20px;
+                margin: 20px 0;
+            }
+            
+            .price-original {
+                font-size: 1.5rem;
+            }
+            
+            .price-current {
+                font-size: 3rem;
+                margin-bottom: 15px;
+            }
+            
+            .discount-badge {
+                top: -10px;
+                right: 10px;
+                padding: 10px 18px;
+                font-size: 1rem;
+            }
+            
+            .payment-options {
+                font-size: 1rem;
+                line-height: 1.5;
+                padding: 15px;
+            }
+            
+            .cta-button {
+                width: 100%;
+                padding: 20px 25px;
+                font-size: 1.1rem;
+                margin: 15px 0;
+                box-sizing: border-box;
+            }
+            
+            .body-areas {
+                padding: 40px 0;
+                margin: 20px 0;
+            }
+            
+            .body-areas h2 {
+                font-size: 2.2rem;
+                margin-bottom: 25px;
+            }
+            
+            .areas-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .area-item {
+                padding: 25px 20px;
+            }
+            
+            .social-proof {
+                padding: 30px 20px;
+                margin: 20px 0;
+            }
+            
+            .testimonials {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            .testimonial {
+                padding: 25px 20px;
+            }
+            
+            .urgency-timer {
+                padding: 20px;
+                margin: 20px 0;
+                font-size: 1.1rem;
+            }
+            
+            .timer {
+                font-size: 2rem;
+            }
+            
+            .faq {
+                padding: 40px 20px;
+                margin: 20px 0;
+            }
+            
+            .faq h2 {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+            
+            .faq-question {
+                padding: 20px;
+                font-size: 1rem;
+            }
+            
+            .faq-answer {
+                padding: 20px;
+                font-size: 0.95rem;
+            }
+            
+            .final-cta {
+                padding: 50px 0;
+                margin: 20px 0;
+            }
+            
+            .final-cta h2 {
+                font-size: 2.2rem;
+                margin-bottom: 25px;
+                line-height: 1.2;
+            }
+            
+            .final-cta p {
+                font-size: 1.1rem !important;
+                margin-bottom: 25px !important;
+                line-height: 1.4;
+            }
+            
+            .final-cta .cta-button {
+                font-size: 1.2rem !important;
+                padding: 22px 30px !important;
+                width: 100%;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                padding: 15px 25px;
+                font-size: 1.1rem;
+            }
+            
+            .hero img[alt="Logo Empresa"] {
+                height: 80px !important;
+                margin-bottom: 15px !important;
+            }
+            
+            .hero p {
+                font-size: 1rem !important;
+            }
+            
+            footer {
+                padding: 30px 0 !important;
+            }
+            
+            footer img {
+                height: 70px !important;
+                margin-bottom: 20px !important;
+            }
+
+            /* Resultados reales - responsive */
+            .results-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+            
+            .result-item {
+                padding: 20px !important;
+                margin-bottom: 20px;
+            }
+            
+            .result-item img {
+                border-radius: 10px !important;
+            }
+            
+            .result-item h4 {
+                font-size: 1.1rem !important;
+            }
+        }
+
+        /* Mejoras adicionales para móvil */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            
+            .price-current {
+                font-size: 2.6rem;
+            }
+            
+            .faq h2, .body-areas h2 {
+                font-size: 1.8rem;
+            }
+            
+            .final-cta h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Urgency Bar -->
+    <div class="urgency-bar">
+        🚨 OFERTA LIMITADA: Solo las primeras 50 personas - Stock disponible: 8 unidades 🚨
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <!-- Logo de la Empresa -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/imperious_1_-_copia.png?v=1751513746" alt="Logo Empresa" style="height: 120px; margin-bottom: 20px; filter: brightness(0) invert(1);">
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; font-weight: 500;">Importadora Premium - Envíos a toda Colombia</p>
+            </div>
+            
+            <h1>✨ DESCUBRE EL SECRETO: Piel Perfecta en TODO TU CUERPO ✨</h1>
+            <p class="hero-subtitle">No solo tu rostro... ¡TAMBIÉN axilas, entrepiernas, codos, rodillas y más!</p>
+            
+            <div class="hook-text" style="background: rgba(255,255,255,0.95); color: #333; padding: 30px; border-radius: 20px; margin: 30px 0; text-align: left; font-size: 1.1rem; line-height: 1.8; border: 3px solid #ff6b9d;">
+                <h3 style="color: #e91e63; font-size: 1.6rem; margin-bottom: 20px; text-align: center;">
+                    🔥 ¡ESTO VA A CAMBIAR TU VIDA!
+                </h3>
+                <p style="margin-bottom: 15px;">
+                    <strong>¿Sabías que puedes tener piel pareja y luminosa en TODA tu cuerpo?</strong>
+                </p>
+                <p style="margin-bottom: 15px;">
+                    Mientras otras mujeres gastan fortunas en tratamientos costosos...
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <strong>TÚ puedes transformar:</strong>
+                </p>
+                <ul style="margin-left: 20px; margin-bottom: 15px; color: #e91e63; font-weight: bold;">
+                    <li>• Manchas del rostro y cuello ✨</li>
+                    <li>• Axilas oscuras 🙌</li>
+                    <li>• Entrepiernas manchadas 💕</li>
+                    <li>• Codos y rodillas ásperos 🌟</li>
+                    <li>• Cualquier zona de tu cuerpo 🔥</li>
+                </ul>
+                <p style="margin-bottom: 15px;">
+                    <strong style="color: #e91e63;">Con UNA SOLA crema... ¡En solo 7-14 días!</strong>
+                </p>
+                <p style="font-weight: bold; font-size: 1.3rem; text-align: center; color: #e91e63; background: #fff3cd; padding: 20px; border-radius: 15px; border: 3px solid #e91e63; margin-top: 20px;">
+                    👇 DESCUBRE EL SECRETO QUE ESTÁ REVOLUCIONANDO COLOMBIA 👇
+                </p>
+            </div>
+            
+            <div class="product-image">
+                <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/1_de6bedf3-af22-48a7-9054-c67bc3f55263.png?v=1751515444" alt="Carotone Crema Aclarante 300ml - Para todo el cuerpo" style="width: 100%; height: auto;">
+            </div>
+
+            <div class="pricing">
+                <div class="discount-badge">🔥 40% OFF</div>
+                <div class="price-original">Antes: $180.000</div>
+                <div class="price-current">$109.900</div>
+                <div class="payment-options">
+                    💳 <strong>ENVÍO GRATIS</strong> a toda Colombia<br>
+                    🚚 Entrega en 24-48 horas<br>
+                    💰 Pago contra entrega disponible<br>
+                    🛡️ <strong>GARANTÍA:</strong> 15 días de satisfacción total<br>
+                    📧 ventas@imperiouslife.com
+                </div>
+                <a href="#" class="cta-button" onclick="orderNow()">
+                    <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/imperious.png?v=1751513089" alt="WhatsApp" class="whatsapp-icon">
+                    ¡QUIERO MI TRANSFORMACIÓN TOTAL!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Timer -->
+    <div class="container">
+        <div class="urgency-timer">
+            ⏰ OFERTA EXPIRA EN: <div class="timer" id="timer">23:59:47</div>
+            ¡No dejes pasar esta oportunidad única!
+        </div>
+    </div>
+
+    <!-- Sección de áreas del cuerpo -->
+    <section class="body-areas">
+        <div class="container">
+            <h2>🤩 ¡NO LO CREERÁS! FUNCIONA EN ESTAS ÁREAS:</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 30px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+                Una sola crema para transformar COMPLETAMENTE tu cuerpo
+            </p>
+            <div class="areas-grid">
+                <div class="area-item">
+                    <div class="area-icon">😍</div>
+                    <div class="area-title">ROSTRO & CUELLO</div>
+                    <p>Elimina manchas, pecas y unifica el tono. Resultados visibles en 3-5 días</p>
+                </div>
+                <div class="area-item">
+                    <div class="area-icon">🙌</div>
+                    <div class="area-title">AXILAS OSCURAS</div>
+                    <p>¡WUAOO! Aclara axilas manchadas. Usa camisetas sin mangas con total confianza</p>
+                </div>
+                <div class="area-item">
+                    <div class="area-icon">💕</div>
+                    <div class="area-title">ENTREPIERNAS</div>
+                    <p>Sí, ¡también ahí! Aclara la zona íntima externa con seguridad y delicadeza</p>
+                </div>
+                <div class="area-item">
+                    <div class="area-icon">🦵</div>
+                    <div class="area-title">CODOS & RODILLAS</div>
+                    <p>Suaviza y aclara esas áreas ásperas y oscuras. Piel sedosa en todo tu cuerpo</p>
+                </div>
+                <div class="area-item">
+                    <div class="area-icon">✨</div>
+                    <div class="area-title">CUALQUIER ZONA</div>
+                    <p>Cicatrices, manchas por acné, marcas... ¡Carotone funciona donde lo necesites!</p>
+                </div>
+                <div class="area-item">
+                    <div class="area-icon">🌟</div>
+                    <div class="area-title">RESULTADOS UNIFORMES</div>
+                    <p>No más parches de diferentes tonos. Una piel pareja y radiante de pies a cabeza</p>
+                </div>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.2); padding: 30px; border-radius: 20px; margin-top: 40px; border: 2px solid rgba(255,255,255,0.3);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                    💫 ¡IMAGÍNATE TENER PIEL PERFECTA EN TODO TU CUERPO!
+                </h3>
+                <p style="font-size: 1.2rem; line-height: 1.6; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+                    <strong>Desde tu rostro hasta tus rodillas...</strong> Una sola crema que revoluciona COMPLETAMENTE tu piel. 
+                    ¡Es como tener un spa profesional en casa las 24 horas!
+                </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#" class="cta-button" onclick="orderNow()">
+                    <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/imperious.png?v=1751513089" alt="WhatsApp" class="whatsapp-icon">
+                    ¡SÍ, QUIERO PIEL PERFECTA EN TODO MI CUERPO!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Resultados Reales -->
+    <section style="background: linear-gradient(135deg, #fff, #f8f0ff); padding: 60px 0; margin: 30px 0; border-radius: 25px; border: 3px solid #ff6b9d;">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.8rem; margin-bottom: 20px; background: linear-gradient(45deg, #e91e63, #ff4081); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                📸 RESULTADOS REALES - ANTES Y DESPUÉS
+            </h2>
+            <p style="text-align: center; font-size: 1.3rem; color: #666; margin-bottom: 50px; line-height: 1.6;">
+                <strong style="color: #e91e63;">¡Estas son clientas REALES!</strong> Sin filtros, sin trucos. 
+                Solo los resultados increíbles de Carotone.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 40px;" class="results-grid">
+                
+                <!-- Resultado 1 -->
+                <div style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 15px 35px rgba(255, 107, 157, 0.15); border: 3px solid #ff6b9d; text-align: center;" class="result-item">
+                    <div style="position: relative; margin-bottom: 20px;">
+                        <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/Imagen_de_WhatsApp_2025-07-03_a_las_21.24.20_3be1b2c6.jpg?v=1751596459" 
+                             alt="Antes y Después - Resultado 1" 
+                             style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                    </div>
+                    <div style="background: linear-gradient(45deg, #e91e63, #ff4081); color: white; padding: 15px; border-radius: 15px;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 8px; font-weight: bold;">✨ TRANSFORMACIÓN INCREÍBLE</h4>
+                        <p style="font-size: 1rem; margin: 0; opacity: 0.9;">Resultados visibles en tiempo récord</p>
+                    </div>
+                </div>
+
+                <!-- Resultado 2 -->
+                <div style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 15px 35px rgba(255, 107, 157, 0.15); border: 3px solid #ff6b9d; text-align: center;" class="result-item">
+                    <div style="position: relative; margin-bottom: 20px;">
+                        <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/Imagen_de_WhatsApp_2025-07-03_a_las_21.24.20_f8622a9b.jpg?v=1751596459" 
+                             alt="Antes y Después - Resultado 2" 
+                             style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                    </div>
+                    <div style="background: linear-gradient(45deg, #e91e63, #ff4081); color: white; padding: 15px; border-radius: 15px;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 8px; font-weight: bold;">🌟 PIEL COMPLETAMENTE NUEVA</h4>
+                        <p style="font-size: 1rem; margin: 0; opacity: 0.9;">La diferencia es impresionante</p>
+                    </div>
+                </div>
+
+                <!-- Resultado 3 -->
+                <div style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 15px 35px rgba(255, 107, 157, 0.15); border: 3px solid #ff6b9d; text-align: center;" class="result-item">
+                    <div style="position: relative; margin-bottom: 20px;">
+                        <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/Imagen_de_WhatsApp_2025-07-03_a_las_21.22.01_6e1607cd.jpg?v=1751596460" 
+                             alt="Antes y Después - Resultado 3" 
+                             style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                    </div>
+                    <div style="background: linear-gradient(45deg, #e91e63, #ff4081); color: white; padding: 15px; border-radius: 15px;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 8px; font-weight: bold;">💕 RESULTADO SORPRENDENTE</h4>
+                        <p style="font-size: 1rem; margin: 0; opacity: 0.9;">Esto sí que funciona de verdad</p>
+                    </div>
+                </div>
+
+                <!-- Resultado 4 -->
+                <div style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 15px 35px rgba(255, 107, 157, 0.15); border: 3px solid #ff6b9d; text-align: center;" class="result-item">
+                    <div style="position: relative; margin-bottom: 20px;">
+                        <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/Imagen_de_WhatsApp_2025-07-03_a_las_21.22.02_af0807bc.jpg?v=1751597293" 
+                             alt="Antes y Después - Resultado 4" 
+                             style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+                    </div>
+                    <div style="background: linear-gradient(45deg, #e91e63, #ff4081); color: white; padding: 15px; border-radius: 15px;">
+                        <h4 style="font-size: 1.2rem; margin-bottom: 8px; font-weight: bold;">🔥 CAMBIO RADICAL</h4>
+                        <p style="font-size: 1rem; margin: 0; opacity: 0.9;">La prueba definitiva que funciona</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Llamada a la acción dentro de la sección -->
+            <div style="background: linear-gradient(135deg, #ff6b9d, #ffa726); color: white; padding: 40px; border-radius: 20px; margin-top: 50px; text-align: center; box-shadow: 0 15px 35px rgba(255, 107, 157, 0.3);">
+                <h3 style="font-size: 2rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                    🤩 ¿VES LA DIFERENCIA? ¡TÚ PUEDES SER LA PRÓXIMA!
+                </h3>
+                <p style="font-size: 1.2rem; margin-bottom: 25px; opacity: 0.95; line-height: 1.5;">
+                    Estas mujeres decidieron cambiar su vida con Carotone... 
+                    <strong>¿Qué estás esperando para unirte a ellas?</strong>
+                </p>
+                <a href="#" class="cta-button" onclick="orderNow()" style="background: linear-gradient(45deg, #25d366, #20bf55); margin: 10px 0;">
+                    <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/imperious.png?v=1751513089" alt="WhatsApp" class="whatsapp-icon">
+                    ¡QUIERO ESTOS RESULTADOS AHORA!
+                </a>
+                <p style="font-size: 0.95rem; margin-top: 15px; opacity: 0.8;">
+                    🎯 Resultados garantizados • 🚚 Envío gratis • 💰 Pago contra entrega
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px; background: linear-gradient(45deg, #e91e63, #ff4081); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">💬 Lo que dicen nuestras clientas:</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"¡OMG! No solo se me quitaron las manchas del rostro, también las axilas oscuras que me daban tanta pena. Ahora uso blusas sin mangas sin complejos. ¡Carotone es mágico!"</div>
+                    <div class="testimonial-author">- María González, Bogotá</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="testimonial-text">"Increíble que una sola crema haga tanto. Rostro, cuello, axilas, rodillas... TODO quedó perfecto. Ya no necesito maquillaje ni tengo que esconder ninguna parte de mi cuerpo."</div>
+                    <div class="testimonial-author">- Sara Silva, Barranquilla</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>❓ Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    ¿De verdad funciona en axilas y entrepiernas también?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer hidden">
+                    ¡Absolutamente SÍ! Carotone está formulado para aclarar cualquier área del cuerpo de forma segura. Miles de mujeres en Colombia ya han transformado sus axilas oscuras, entrepiernas manchadas, codos ásperos y rodillas oscuras. La fórmula con extracto de zanahoria y vitaminas A y E es suave pero efectiva para todas las zonas del cuerpo.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Es seguro usar en zonas íntimas?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer hidden">
+                    Sí, es completamente seguro para uso en la zona externa de las entrepiernas. NO debe aplicarse en mucosas. La fórmula es dermatológicamente probada y suave. Miles de mujeres la usan sin problemas en estas áreas delicadas.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Cuánto tiempo tarda en llegar a mi ciudad?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer hidden">
+                    Enviamos en 24-48 horas a toda Colombia. Recibirás tu pedido en 2-5 días hábiles dependiendo tu ciudad. Envío GRATIS incluido.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Qué hace tan especial el extracto de zanahoria?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer hidden">
+                    El extracto de zanahoria es rico en betacarotenos (precursores de vitamina A) que estimulan la renovación celular y ayudan a desvanecer manchas en CUALQUIER parte del cuerpo. También contiene antioxidantes que protegen contra el envejecimiento y mantienen la piel joven y radiante. Es por eso que funciona tan bien en todas las áreas.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Puedo pagar contra entrega?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer hidden">
+                    ¡Por supuesto! Ofrecemos pago contra entrega para tu tranquilidad. También aceptamos transferencias a ventas@imperiouslife.com
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Cuánto dura una crema de 300ml?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer hidden">
+                    Una crema de 300ml te dura aproximadamente 2-3 meses usándola en múltiples áreas del cuerpo (rostro, axilas, codos, rodillas, etc.). Un poquito rinde muchísimo, por eso es tan económica comparada con tratamientos separados para cada zona.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>🔥 ¡ÚLTIMA OPORTUNIDAD! 🔥</h2>
+            <p style="font-size: 1.4rem; margin-bottom: 30px; line-height: 1.5;">
+                No dejes pasar esta oferta única. Solo quedan pocas unidades disponibles.
+                Tu transformación TOTAL está a un clic de distancia.
+            </p>
+            <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 15px; margin: 25px 0; border: 2px solid rgba(255,255,255,0.3);">
+                <p style="font-size: 1.2rem; margin-bottom: 0; font-weight: bold;">
+                    ✨ UNA SOLA CREMA PARA TODO TU CUERPO<br>
+                    🔥 RESULTADOS EN ROSTRO, AXILAS, ENTREPIERNAS, CODOS, RODILLAS<br>
+                    💕 CONFIANZA TOTAL EN 7-14 DÍAS
+                </p>
+            </div>
+            <a href="#" class="cta-button" onclick="orderNow()" style="font-size: 1.4rem; padding: 25px 50px;">
+                <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/imperious.png?v=1751513089" alt="WhatsApp" class="whatsapp-icon-large">
+                ¡SÍ, QUIERO MI TRANSFORMACIÓN TOTAL - $109.900!
+            </a>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                🔒 Compra 100% segura | 🚚 Envío gratis | 💰 Pago contra entrega | 📧 ventas@imperiouslife.com
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Profesional -->
+    <footer style="background: linear-gradient(135deg, #333, #555); color: white; padding: 50px 0; text-align: center;">
+        <div class="container">
+            <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/imperious_1_-_copia.png?v=1751513746" alt="Logo Empresa" style="height: 100px; margin-bottom: 25px; filter: brightness(0) invert(1);">
+            <p style="margin-bottom: 10px; font-size: 1.3rem; font-weight: bold;">Importadora Premium de Productos de Belleza</p>
+            <p style="margin-bottom: 20px; opacity: 0.8; font-size: 1.1rem;">Transformando la piel de miles de mujeres en Colombia 🇨🇴</p>
+            <div style="margin: 20px 0; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+                <p style="font-size: 1rem; margin-bottom: 10px;">
+                    📱 <strong>WhatsApp:</strong> +573247149582<br>
+                    📧 <strong>Email:</strong> ventas@imperiouslife.com<br>
+                    🚚 <strong>Envíos:</strong> A toda Colombia<br>
+                    🔒 <strong>Compra:</strong> 100% segura
+                </p>
+            </div>
+            <p style="font-size: 0.9rem; opacity: 0.6; margin-top: 20px;">
+                © 2025 Imperious Life | Productos de calidad • Atención personalizada • Resultados garantizados
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="whatsapp-float" onclick="orderNow()">
+        <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/imperious.png?v=1751513089" alt="WhatsApp" class="whatsapp-icon-small">
+        WhatsApp
+    </a>
+
+    <script>
+        // Countdown timer
+        function updateTimer() {
+            const timerElement = document.getElementById('timer');
+            let time = timerElement.textContent;
+            let [hours, minutes, seconds] = time.split(':').map(Number);
+            
+            seconds--;
+            if (seconds < 0) {
+                seconds = 59;
+                minutes--;
+                if (minutes < 0) {
+                    minutes = 59;
+                    hours--;
+                    if (hours < 0) {
+                        hours = 23;
+                    }
+                }
+            }
+            
+            timerElement.textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        setInterval(updateTimer, 1000);
+
+        // FAQ toggle
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('span');
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.textContent = '-';
+            } else {
+                answer.classList.add('hidden');
+                icon.textContent = '+';
+            }
+        }
+
+        // Order function
+        function orderNow() {
+            const message = `🌟 ¡Hola! Quiero ordenar mi Carotone Crema Aclarante 300ml por $109.900 con envío gratis 🚚
+
+✨ *TRANSFORMACIÓN TOTAL*: Para rostro, axilas, entrepiernas, codos, rodillas
+💖 *OFERTA ESPECIAL*: 40% de descuento
+💳 *Precio*: $109.900 (antes $180.000)
+📦 *Incluye*: Envío gratis a toda Colombia
+🚚 *Entrega*: 24-48 horas
+🛡️ *Garantía*: 15 días de satisfacción total
+
+¿Podrías confirmar mi pedido para empezar mi transformación? ¡Gracias!`;
+            
+            const whatsappUrl = `https://wa.me/573247149582?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Agregar animación de entrada cuando los elementos son visibles
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animación
+        document.querySelectorAll('.area-item, .testimonial, .result-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
