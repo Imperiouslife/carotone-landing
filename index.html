@@ -19,7 +19,7 @@
             font-family: 'Arial', sans-serif;
             line-height: 1.4;
             color: #333;
-            background: #000;
+            background: #fff;
         }
 
         /* Barra de urgencia */
@@ -304,21 +304,25 @@
 
         /* Formulario */
         .form-section {
-            background: linear-gradient(135deg, #ff1744, #ff6b9d);
-            color: white;
+            background: linear-gradient(135deg, #f8bbd9, #e1bee7);
+            color: #333;
             padding: 100px 0;
             position: relative;
+            overflow: visible;
+            min-height: auto;
         }
 
         .form-container {
             max-width: 700px;
             margin: 0 auto;
-            background: rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
             backdrop-filter: blur(15px);
             padding: 50px;
             border-radius: 30px;
-            border: 2px solid rgba(255,255,255,0.2);
-            box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+            border: 2px solid rgba(255,255,255,0.4);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+            overflow: visible;
+            min-height: auto;
         }
 
         .form-title {
@@ -351,24 +355,25 @@
         .form-input {
             width: 100%;
             padding: 18px 25px;
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid #ddd;
             border-radius: 15px;
-            background: rgba(255,255,255,0.1);
-            color: white;
+            background: #fff;
+            color: #333;
             font-size: 1.1rem;
             transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
         .form-input:focus {
             outline: none;
-            border-color: #fff;
-            background: rgba(255,255,255,0.2);
-            box-shadow: 0 0 25px rgba(255,255,255,0.3);
+            border-color: #e91e63;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(233,30,99,0.2);
         }
 
         .form-input::placeholder {
-            color: rgba(255,255,255,0.6);
+            color: #666;
+            opacity: 1;
         }
 
         .product-options {
@@ -389,19 +394,20 @@
         .product-option label {
             display: block;
             padding: 25px;
-            background: rgba(255,255,255,0.1);
-            border: 2px solid rgba(255,255,255,0.3);
+            background: #fff;
+            border: 2px solid #ddd;
             border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-align: center;
-            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            color: #333;
         }
 
         .product-option input[type="radio"]:checked + label {
-            background: rgba(255,255,255,0.3);
-            border-color: #fff;
-            box-shadow: 0 0 25px rgba(255,255,255,0.4);
+            background: linear-gradient(135deg, #fce4ec, #f8bbd9);
+            border-color: #e91e63;
+            box-shadow: 0 0 20px rgba(233,30,99,0.3);
             transform: scale(1.05);
         }
 
@@ -409,17 +415,18 @@
             font-size: 1.3rem;
             font-weight: bold;
             margin-bottom: 8px;
+            color: #333;
         }
 
         .product-price {
             font-size: 1.8rem;
-            color: #fff;
+            color: #e91e63;
             font-weight: bold;
         }
 
         .submit-btn {
             width: 100%;
-            background: linear-gradient(45deg, #4caf50, #66bb6a);
+            background: linear-gradient(45deg, #e91e63, #f06292);
             color: white;
             padding: 25px;
             border: none;
@@ -430,12 +437,13 @@
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 1px;
-            box-shadow: 0 15px 40px rgba(76, 175, 80, 0.4);
+            box-shadow: 0 15px 40px rgba(233, 30, 99, 0.4);
         }
 
         .submit-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 50px rgba(76, 175, 80, 0.6);
+            box-shadow: 0 20px 50px rgba(233, 30, 99, 0.6);
+            background: linear-gradient(45deg, #ad1457, #e91e63);
         }
 
         .submit-btn:disabled {
@@ -574,24 +582,24 @@
             font-size: 1.1rem;
         }
 
-        /* Notificaciones Premium */
+        /* Notificaciones Premium - Más Pequeñas */
         .notification {
             position: fixed;
-            bottom: 100px;
+            bottom: 120px;
             left: 20px;
             background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
             color: white;
-            padding: 20px 25px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 30px rgba(255,107,157,0.2);
+            padding: 12px 18px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3), 0 0 20px rgba(255,107,157,0.15);
             z-index: 9999;
             transform: translateX(-400px);
-            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            max-width: 380px;
-            border: 1px solid rgba(255,107,157,0.3);
-            backdrop-filter: blur(20px);
-            position: relative;
+            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            max-width: 280px;
+            border: 1px solid rgba(255,107,157,0.25);
+            backdrop-filter: blur(15px);
             overflow: hidden;
+            font-size: 0.85rem;
         }
 
         .notification::before {
@@ -600,9 +608,9 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 3px;
+            height: 2px;
             background: linear-gradient(90deg, #ff1744, #ff6b9d, #ffa726);
-            border-radius: 20px 20px 0 0;
+            border-radius: 15px 15px 0 0;
         }
 
         .notification::after {
@@ -612,7 +620,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
             animation: shimmer 3s infinite;
         }
 
@@ -628,30 +636,29 @@
         .notification-content {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
             position: relative;
             z-index: 2;
         }
 
         .notification-avatar {
-            width: 50px;
-            height: 50px;
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
             background: linear-gradient(135deg, #ff1744, #ff6b9d);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.4rem;
+            font-size: 1rem;
             flex-shrink: 0;
-            box-shadow: 0 8px 20px rgba(255,23,68,0.3);
-            border: 2px solid rgba(255,255,255,0.2);
-            position: relative;
+            box-shadow: 0 5px 15px rgba(255,23,68,0.25);
+            border: 1px solid rgba(255,255,255,0.15);
         }
 
         .notification-avatar::before {
             content: '';
             position: absolute;
-            inset: -2px;
+            inset: -1px;
             border-radius: 50%;
             background: linear-gradient(45deg, #ff1744, #ff6b9d, #ffa726);
             animation: rotate 3s linear infinite;
@@ -669,8 +676,8 @@
 
         .notification-name {
             font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 4px;
+            font-size: 0.9rem;
+            margin-bottom: 3px;
             background: linear-gradient(45deg, #fff, #ff6b9d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -678,41 +685,44 @@
         }
 
         .notification-action {
-            font-size: 0.95rem;
+            font-size: 0.8rem;
             opacity: 0.9;
             color: #e0e0e0;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
         }
 
         .notification-time {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             opacity: 0.6;
             color: #ff6b9d;
             font-weight: 500;
         }
 
         .notification-close {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.25);
             color: white;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             cursor: pointer;
-            opacity: 0.7;
-            padding: 8px;
-            width: 30px;
-            height: 30px;
+            opacity: 0.8;
+            padding: 6px;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
             transition: all 0.3s ease;
             flex-shrink: 0;
+            font-weight: bold;
+            line-height: 1;
         }
 
         .notification-close:hover {
             opacity: 1;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.25);
             transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(255,255,255,0.2);
         }
 
         /* Pulse animation for urgency */
@@ -748,9 +758,9 @@
         /* Efectos adicionales para premium */
         .notification-icon {
             position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 0.8rem;
+            top: 8px;
+            right: 10px;
+            font-size: 0.7rem;
             opacity: 0.3;
             animation: float 3s ease-in-out infinite;
         }
@@ -760,32 +770,109 @@
             50% { transform: translateY(-5px); }
         }
 
-        /* Mobile responsive */
+        /* Mobile Responsive */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .offers-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .offer-popular {
+                transform: none;
+                margin-top: 30px;
+            }
+            
+            .product-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-container {
+                margin: 0 15px;
+                padding: 30px 25px;
+            }
+            
+            .form-title {
+                font-size: 2.2rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .viewers-bar {
+                top: 50px;
+                right: 10px;
+                font-size: 0.8rem;
+                padding: 10px 15px;
+                display: block !important;
+                opacity: 1 !important;
+            }
+            
+            .rating-badge {
+                margin: 5px;
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .stock-bar {
+                padding: 12px 15px;
+                font-size: 0.85rem;
+            }
+            
             .notification {
                 left: 10px;
                 right: 10px;
-                max-width: none;
+                max-width: 250px;
                 bottom: 80px;
-                padding: 18px 20px;
+                padding: 10px 15px;
+                transform: translateX(-100vw);
+                font-size: 0.8rem;
+            }
+            
+            .notification.show {
+                transform: translateX(0);
             }
             
             .notification-content {
-                gap: 12px;
+                gap: 8px;
             }
             
             .notification-avatar {
-                width: 45px;
-                height: 45px;
-                font-size: 1.2rem;
+                width: 30px;
+                height: 30px;
+                font-size: 0.9rem;
             }
 
             .notification-name {
-                font-size: 1rem;
+                font-size: 0.8rem;
             }
 
             .notification-action {
-                font-size: 0.9rem;
+                font-size: 0.75rem;
+            }
+
+            .notification-time {
+                font-size: 0.65rem;
             }
         }
         @media (max-width: 768px) {
@@ -864,6 +951,18 @@
             <div class="product-showcase">
                 <div class="product-image">
                     <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/1_de6bedf3-af22-48a7-9054-c67bc3f55263.png?v=1751515444" alt="Carotone Crema Aclarante 300ml">
+                </div>
+                
+                <!-- Calificación prominente -->
+                <div style="text-align: center; margin: 25px 0;">
+                    <div class="rating-badge">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span>4.9/5</span>
+                    </div>
+                    <div class="rating-badge">
+                        <span style="color: #4caf50; margin-right: 5px;">✓</span>
+                        <span>+12,847 clientas satisfechas</span>
+                    </div>
                 </div>
             </div>
 
@@ -971,6 +1070,18 @@
                     <div class="price-new">$119.900</div>
                     <div class="savings">¡AHORRAS $60.000!</div>
                     
+                    <!-- Barra de stock para oferta simple -->
+                    <div class="stock-bar">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="font-size: 0.9rem; font-weight: bold;">🔥 Stock limitado</span>
+                            <span style="font-size: 0.8rem;">Quedan: <strong id="stockSingle">24</strong></span>
+                        </div>
+                        <div class="stock-progress">
+                            <div class="stock-fill" style="--stock-width: 65%; width: 65%;"></div>
+                        </div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; text-align: center;">¡Se agota rápido!</div>
+                    </div>
+                    
                     <ul class="offer-features">
                         <li>1 Carotone 300ml (2-3 meses)</li>
                         <li>Envío GRATIS a toda Colombia</li>
@@ -987,6 +1098,18 @@
                     <div class="price-old">Precio normal: $239.800</div>
                     <div class="price-new">$179.800</div>
                     <div class="savings">¡AHORRAS $60.000 EXTRA!</div>
+                    
+                    <!-- Barra de stock para pack (más urgente) -->
+                    <div class="stock-bar" style="background: linear-gradient(135deg, #d32f2f, #f44336);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="font-size: 0.9rem; font-weight: bold;">🚨 ¡CASI AGOTADO!</span>
+                            <span style="font-size: 0.8rem;">Quedan: <strong id="stockPack">8</strong></span>
+                        </div>
+                        <div class="stock-progress">
+                            <div class="stock-fill" style="--stock-width: 15%; width: 15%; background: linear-gradient(90deg, #ff1744, #ff5722);"></div>
+                        </div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; text-align: center;">⚡ ¡Últimas unidades!</div>
+                    </div>
                     
                     <ul class="offer-features">
                         <li>2 Carotone 300ml (4-6 meses)</li>
@@ -1115,7 +1238,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label">🛒 Selecciona tu opción *</label>
+                        <label class="form-label" style="color: #333; font-weight: bold;">🛒 Selecciona tu opción *</label>
                         <div class="product-options">
                             <div class="product-option">
                                 <input type="radio" id="single" name="selected_product" value="1 unidad - $119.900" required>
@@ -1150,7 +1273,7 @@
 
                 </form>
 
-                <div style="text-align: center; margin-top: 30px; opacity: 0.8; font-size: 0.9rem;">
+                <div style="text-align: center; margin-top: 30px; opacity: 0.8; font-size: 0.9rem; color: #666;">
                     🔒 Información 100% segura | 📞 Soporte: +573247149582
                 </div>
             </div>
@@ -1189,69 +1312,141 @@
         </div>
     </section>
 
-    <!-- Testimonios -->
-    <section class="testimonials-section">
+    <!-- Footer Profesional -->
+    <footer style="background: linear-gradient(135deg, #1a1a1a, #2d2d2d); color: #e0e0e0; padding: 60px 0 40px; border-top: 1px solid rgba(255,255,255,0.1);">
         <div class="container">
-            <h2 class="section-title">💬 Lo que dicen nuestras clientas</h2>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <div class="testimonial-text">
-                        "¡Increíble! En 10 días se me quitaron las manchas del rostro y las axilas oscuras. 
-                        Se nota que es crema importada original, la calidad es excelente. ¡Carotone es mágico!"
-                    </div>
-                    <div class="testimonial-author">- María G., Bogotá</div>
+            <!-- Logo y descripción -->
+            <div style="text-align: center; margin-bottom: 50px;">
+                <img src="https://cdn.shopify.com/s/files/1/0617/3540/3586/files/imperious_1_-_copia.png?v=1751513746" alt="Imperious Life" style="height: 60px; margin-bottom: 20px; filter: brightness(0) invert(1);">
+                <p style="font-size: 1.1rem; color: #b0b0b0; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+                    Importadora líder en productos de belleza premium. Comprometidos con la calidad, 
+                    autenticidad y satisfacción de nuestros clientes en toda Colombia.
+                </p>
+            </div>
+
+            <!-- Información legal en grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                
+                <!-- Información de la empresa -->
+                <div>
+                    <h4 style="color: #ff6b9d; font-size: 1.2rem; margin-bottom: 15px; font-weight: bold;">Información Legal</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.6; color: #b0b0b0; margin-bottom: 8px;">
+                        <strong>Razón Social:</strong> Imperious Life SAS
+                    </p>
+                    <p style="font-size: 0.9rem; line-height: 1.6; color: #b0b0b0; margin-bottom: 8px;">
+                        <strong>Registro Mercantil:</strong> Cámara de Comercio de Bogotá
+                    </p>
+                    <p style="font-size: 0.9rem; line-height: 1.6; color: #b0b0b0;">
+                        <strong>Actividad Económica:</strong> Comercio al por menor de productos cosméticos
+                    </p>
                 </div>
 
-                <div class="testimonial">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <div class="testimonial-text">
-                        "Pedí el pack y fue la mejor decisión. Una crema para rostro, axilas, codos... 
-                        TODO quedó perfecto. El producto viene sellado y original, vale cada peso."
-                    </div>
-                    <div class="testimonial-author">- Carmen L., Medellín</div>
+                <!-- Políticas y términos -->
+                <div>
+                    <h4 style="color: #ff6b9d; font-size: 1.2rem; margin-bottom: 15px; font-weight: bold;">Políticas</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 8px;">
+                            <a href="#" style="color: #b0b0b0; text-decoration: none; font-size: 0.9rem; transition: color 0.3s ease;" onmouseover="this.style.color='#ff6b9d'" onmouseout="this.style.color='#b0b0b0'">
+                                Términos y Condiciones
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 8px;">
+                            <a href="#" style="color: #b0b0b0; text-decoration: none; font-size: 0.9rem; transition: color 0.3s ease;" onmouseover="this.style.color='#ff6b9d'" onmouseout="this.style.color='#b0b0b0'">
+                                Política de Privacidad
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 8px;">
+                            <a href="#" style="color: #b0b0b0; text-decoration: none; font-size: 0.9rem; transition: color 0.3s ease;" onmouseover="this.style.color='#ff6b9d'" onmouseout="this.style.color='#b0b0b0'">
+                                Política de Devoluciones
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 8px;">
+                            <a href="#" style="color: #b0b0b0; text-decoration: none; font-size: 0.9rem; transition: color 0.3s ease;" onmouseover="this.style.color='#ff6b9d'" onmouseout="this.style.color='#b0b0b0'">
+                                Política de Envíos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #b0b0b0; text-decoration: none; font-size: 0.9rem; transition: color 0.3s ease;" onmouseover="this.style.color='#ff6b9d'" onmouseout="this.style.color='#b0b0b0'">
+                                Protección de Datos
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="testimonial">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <div class="testimonial-text">
-                        "Me encanta que sea producto importado 100% original. El pago contra entrega me dio confianza. 
-                        Llegó súper rápido y los resultados son visibles desde la primera semana."
+                <!-- Garantías y certificaciones -->
+                <div>
+                    <h4 style="color: #ff6b9d; font-size: 1.2rem; margin-bottom: 15px; font-weight: bold;">Garantías</h4>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="color: #4caf50; font-size: 1.1rem;">🛡️</span>
+                            <span style="font-size: 0.9rem; color: #b0b0b0;">Productos 100% Originales</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="color: #4caf50; font-size: 1.1rem;">🔒</span>
+                            <span style="font-size: 0.9rem; color: #b0b0b0;">Transacciones Seguras</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="color: #4caf50; font-size: 1.1rem;">📋</span>
+                            <span style="font-size: 0.9rem; color: #b0b0b0;">Registro INVIMA</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="color: #4caf50; font-size: 1.1rem;">🏆</span>
+                            <span style="font-size: 0.9rem; color: #b0b0b0;">Certificación ISO 9001</span>
+                        </div>
                     </div>
-                    <div class="testimonial-author">- Ana S., Barranquilla</div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Notificación de actividad premium -->
+            <!-- Disclaimers legales -->
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; margin-bottom: 20px;">
+                <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; border-left: 4px solid #ff6b9d;">
+                    <p style="font-size: 0.85rem; color: #999; line-height: 1.5; margin: 0;">
+                        <strong style="color: #ff6b9d;">IMPORTANTE:</strong> Los resultados pueden variar según cada persona. 
+                        Los testimonios y resultados mostrados no garantizan los mismos efectos en todos los usuarios. 
+                        Este producto no está destinado a diagnosticar, tratar, curar o prevenir ninguna enfermedad. 
+                        Consulte a un dermatólogo antes de usar si tiene condiciones médicas específicas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Copyright y año -->
+            <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px;">
+                <p style="font-size: 0.9rem; color: #999; margin-bottom: 10px;">
+                    © 2025 Imperious Life SAS. Todos los derechos reservados.
+                </p>
+                <p style="font-size: 0.8rem; color: #777; margin: 0;">
+                    Hecho con ❤️ en Colombia para mujeres que buscan la excelencia en cuidado de la piel.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notificación de actividad premium - Más pequeña -->
     <div id="notification" class="notification">
         <div class="notification-icon">✨</div>
         <div class="notification-content">
             <div class="notification-avatar">👤</div>
             <div class="notification-text">
                 <div class="notification-name">María de Bogotá</div>
-                <div class="notification-action">acaba de ordenar el Pack x2</div>
-                <div class="notification-time">hace 2 minutos</div>
+                <div class="notification-action">ordenó Pack x2</div>
+                <div class="notification-time">hace 2 min</div>
             </div>
-            <button class="notification-close" onclick="hideNotification()">×</button>
         </div>
     </div>
 
     <script>
-        // Sistema de notificaciones
+        // Sistema de notificaciones - Textos más cortos
         const notifications = [
-            { name: "María", city: "Bogotá", product: "Pack x2", time: "2 minutos", avatar: "👩" },
-            { name: "Carmen", city: "Medellín", product: "1 unidad", time: "5 minutos", avatar: "👩" },
-            { name: "Ana", city: "Barranquilla", product: "Pack x2", time: "7 minutos", avatar: "👱‍♀️" },
-            { name: "Sofia", city: "Cali", product: "1 unidad", time: "12 minutos", avatar: "👩" },
-            { name: "Laura", city: "Bucaramanga", product: "Pack x2", time: "15 minutos", avatar: "👩‍🦰" },
-            { name: "Patricia", city: "Cartagena", product: "1 unidad", time: "18 minutos", avatar: "👩" },
-            { name: "Claudia", city: "Pereira", product: "Pack x2", time: "22 minutos", avatar: "👱‍♀️" },
-            { name: "Diana", city: "Manizales", product: "1 unidad", time: "25 minutos", avatar: "👩" },
-            { name: "Mónica", city: "Santa Marta", product: "Pack x2", time: "28 minutos", avatar: "👩‍🦰" },
-            { name: "Alejandra", city: "Ibagué", product: "1 unidad", time: "32 minutos", avatar: "👩" }
+            { name: "María", city: "Bogotá", product: "Pack x2", time: "2 min", avatar: "👩" },
+            { name: "Carmen", city: "Medellín", product: "1 unidad", time: "5 min", avatar: "👩" },
+            { name: "Ana", city: "Barranquilla", product: "Pack x2", time: "7 min", avatar: "👱‍♀️" },
+            { name: "Sofia", city: "Cali", product: "1 unidad", time: "12 min", avatar: "👩" },
+            { name: "Laura", city: "Bucaramanga", product: "Pack x2", time: "15 min", avatar: "👩‍🦰" },
+            { name: "Patricia", city: "Cartagena", product: "1 unidad", time: "18 min", avatar: "👩" },
+            { name: "Claudia", city: "Pereira", product: "Pack x2", time: "22 min", avatar: "👱‍♀️" },
+            { name: "Diana", city: "Manizales", product: "1 unidad", time: "25 min", avatar: "👩" },
+            { name: "Mónica", city: "Santa Marta", product: "Pack x2", time: "28 min", avatar: "👩‍🦰" },
+            { name: "Alejandra", city: "Ibagué", product: "1 unidad", time: "32 min", avatar: "👩" }
         ];
 
         let currentNotificationIndex = 0;
@@ -1264,7 +1459,7 @@
             // Actualizar contenido
             notification.querySelector('.notification-avatar').textContent = currentData.avatar;
             notification.querySelector('.notification-name').textContent = `${currentData.name} de ${currentData.city}`;
-            notification.querySelector('.notification-action').textContent = `acaba de ordenar ${currentData.product}`;
+            notification.querySelector('.notification-action').textContent = `ordenó ${currentData.product}`;
             notification.querySelector('.notification-time').textContent = `hace ${currentData.time}`;
             
             // Agregar clase urgent cada 3 notificaciones
@@ -1277,17 +1472,18 @@
             // Mostrar notificación
             notification.classList.add('show');
             
-            // Ocultar después de 4 segundos
+            // Ocultar después de 3 segundos (más rápido)
             setTimeout(() => {
                 notification.classList.remove('show');
-            }, 4000);
+            }, 3000);
             
             // Siguiente notificación
             currentNotificationIndex = (currentNotificationIndex + 1) % notifications.length;
         }
 
         function hideNotification() {
-            document.getElementById('notification').classList.remove('show');
+            const notification = document.getElementById('notification');
+            notification.classList.remove('show');
         }
 
         function startNotifications() {
@@ -1501,6 +1697,9 @@ Por favor intenta nuevamente o contáctanos directamente por WhatsApp: +57324714
 
         // Inicializar notificaciones cuando carga la página
         startNotifications();
+        
+        // Inicializar sistemas dinámicos
+        initDynamicSystems();
 
         console.log("🚀 Landing page cargada correctamente");
         console.log("📧 EmailJS Service ID: service_4gf3fhm");
